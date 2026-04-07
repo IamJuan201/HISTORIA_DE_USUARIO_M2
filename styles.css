@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    color: #333;
-    background-color: #f4f4f4;
+    color: #dbdee6;
+    background-color: #1B4079;
     padding: 0;
     text-align: center;
 }
@@ -22,39 +22,34 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav a {
-    color: #0f8aee;
+    color: #f0e2e2;
     text-decoration: none;
     font-weight: bold;
 }
 
 
 nav a:hover {
-    color: #1756cc;
+    color: #CBDF90;
 }
 
 
 section {
-    background: white;
+    background: #1b41793b;
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px #000000;
 }
 
 
-article {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-}
 
 img {
     display: block;
-    margin: 10px 0;
+    margin: 10px;
     border-radius: 5px;
 }
