@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
 
 <head>
-    <title>MIS MASCOTAS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASCOTAS</title>
+    <link rel="icon" type="image/x-icon" href="favicon/mascotas.png">
     <link rel="stylesheet" href="styles.css">
     <meta name="Descripción" content="Esta es una pagina donde puedes ver mascotas">
     <meta name="Autor" content="Juan Rangel">
     <meta name="Fecha" content="2026-04-06">
 </head>
+
 <body>
     <header>
-        <h1>Mis Mascotas</h1>
+        <h1>Mi galeria de Mascotas</h1>
         <nav>
             <a href="index.html">Volver al Portafolio</a>
         </nav>
     </header>
-    <hr>
     
-    <section id="galeria">
-        <article>
-            <h3>Felix</h3>
-            <img src="https://cdn.create.vista.com/api/media/small/88052232/stock-photo-black-cat-sitting-in-front-of-white-background" alt="Imagen de gato negro" width="200">
-            <p>Es un gato tranquilo, su nombre porviene de una vieja caricatura</p>
-        </article>
+    <section>
+        <article class="card">
+            <div class="card-header" style="background-image: url('img/gato.jpeg');"></div>
+        <div class="card-body">
+            <h3 class="card-title">Felix</h3>
+            <p class="card-description">Felix es un gato negro muy juguetón y curioso. Le encanta explorar cada rincón de la casa, perseguir cualquier cosa que se mueva y ronronear cuando está feliz. Por las noches es el rey del sofá.</p>
+        </div>
+    </article>
 
-        <article>
-            <h3>Pepe</h3>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Amazona_auropalliata_-Roatan_Tropical_Butterfly_Garden-8a.jpg/250px-Amazona_auropalliata_-Roatan_Tropical_Butterfly_Garden-8a.jpg" alt="Imagen de loro verde" width="200">
-            <p>Es un loro divertido que le gusta hablar de mas por las tardes</p>
-        </article>
+    <article class="card">
+        <div class="card-header" style="background-image: url('img/perro.jpg');"></div>
+        <div class="card-body">
+            <h3 class="card-title">Max</h3>
+            <p class="card-description">Max es un golden retriever lleno de energía y amor. Es el primero en recibirte cuando llegas a casa, nunca le dice que no a un paseo y su cola no para de moverse. Un amigo fiel e incondicional.</p>
+        </div>
+    </article>
 
-        <article>
-            <h3>Max</h3>
-            <img src="https://blog.mascotaysalud.com/wp-content/uploads/2018/10/perro-feliz.jpg" alt="Imagen de perro alegre" width="200">
-            <p>Es un perro muy inquieto</p>
-        </article>
-    </section>
+    <article class="card">
+        <div class="card-header" style="background-image: url('img/loro.jpg');"></div>
+        <div class="card-body">
+            <h3 class="card-title">Pepe</h3>
+            <p class="card-description">Pepe es un loro amazónico de plumas brillantes y personalidad única. Le encanta dormir largas siestas, pero cuando está despierto observa todo con mucha atención. Tranquilo, curioso y muy expresivo a su manera.</p>
+        </div>
+    </article>
+
+</section>
 
 </body>
+
 
 </html>

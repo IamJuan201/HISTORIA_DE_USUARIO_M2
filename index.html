@@ -1,50 +1,79 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
 
 <head>
     <title>PORTAFOLIO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <meta name="Descripción" content="Esta es una pagina donde puedes ver el portafolio">
+    <link rel="icon" type="image/x-icon" href="favicon/portafolio.png">
+    <meta name="Descripción" content="Esta es una pagina donde puedes ver mi portafolio">
     <meta name="Autor" content="Juan Rangel">
     <meta name="Fecha" content="2026-04-06">
 </head>
+
 <body>
     <header>
-        <h1>PORTAFOLIO</h1>
+        <h1>Juan Rangel</h1>
         <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                
-                <li><a href="mascotas.html">Mascotas</a></li>
-            </ul>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="mascotas.html">Mascotas</a>
         </nav>
     </header>
-    <hr>
-
+   
 <section id = "sobre-mi">
-    <h2>Sobre mi</h2>
-    <p>Hola soy Juan y este es mi portafolio personal donde muestro mis trabajos</p>
+    <div class="perfil-card">
+        <div class="perfil-top">
+            <img class="perfil-foto" src="img/perfil.png" alt="Juan Rangel">
+            <div class="perfil-info">
+                <h2 class="perfil-nombre">Juan Rangel</h2>
+                <hr class="perfil-linea">
+                <p class="perfil-cargo">Estudiante de Desarrollo Web</p>
+            </div>
+        </div>
+
+        <div class="perfil-bottom">
+            <h3>Sobre mi</h3>
+            <hr class="perfil-linea">
+            <p>Soy un estudiante de desarrollo de software apasionado por la tecnología y el desarrollo web. Me encanta aprender cosas nuevas cada día, resolver problemas creativamente y construir proyectos que combinen diseño y funcionalidad. Actualmente estoy fortaleciendo mis habilidades en HTML, CSS y Python con el objetivo de convertirme en un desarrollador completo. Fuera del código disfruto explorar nuevas ideas, trabajar en equipo y seguir creciendo tanto personal como profesionalmente.</p>
+        </div>
+    
+    </div>
 </section>
 
 <section id = "proyectos">
-    <h2>Proyectos</h2>
-    <ul>
-        <li><a href="http://127.0.0.1:5500/html/MiPrimerCodigo.html">Proyecto 1: Mi primera pagina web</a></li>
-    </ul>
+    <div class="perfil-card">
+        <h3>Proyectos</h3>
+        <hr class="perfil-linea">
+        <ul>
+            <li><a href="#PrimeraPagina">Mi primera pagina web</a></li>
+            <li><a href="#Cine">Pagina de cine</a></li>
+            <li><a href="#DragonBall">Pagina de dragon ball</a></li>
+        </ul>
+    </div>
 </section>
 
 <section id = "contacto">
-    <h2>Contacto</h2>
-    <form>
-        <label>Nombre:</label>
-        <input type="text" placeholder="Tu nombre">
-        <button type="submit">Enviar</button>
-    </form>
+    <div class="perfil-card">
+        <h3>Contacto</h3>
+        <hr class="perfil-linea">
+        <form>
+            <label>Nombre:</label>
+            <input type="text" placeholder="EJ: Juan Rangel">
+            <label>Email:</label>
+            <input type="email" placeholder="EJ: juan201@example.com">
+            <label>Numero:</label>
+            <input type="number" min="1" placeholder="EJ: 1234567890">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </section>
 
 </body>
+
+<footer>
+    <p>© 2026 Juan Rangel. Todos los derechos reservados.</p>
 
 </html>
