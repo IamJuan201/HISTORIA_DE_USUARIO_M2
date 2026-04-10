@@ -92,9 +92,9 @@ section {
 }
 
 .perfil-linea {
-    border: none;
+    border: 2px;
     border-top: 2px solid black;
-    margin: 6px 0;
+    margin: 6px;
     display: block;
 }
 
