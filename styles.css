@@ -43,7 +43,7 @@ section {
     background-color: rgb(153, 171, 200);
     border-radius: 16px;
     padding: 24px;
-    width: 800px;
+    width: 700px;
     margin: 30px;
 }
 
@@ -100,6 +100,31 @@ section {
 
 .perfil-card h3 {
     text-align: center;
+}
+
+.contacto-card {
+    text-align: center;
+    background-color: rgb(153, 171, 200);
+    border-radius: 16px;
+    padding: 24px;
+    width: 450px;
+    margin: 30px;
+}
+
+.contacto-linea {
+    border: 2px;
+    border-top: 2px solid black;
+    margin: 6px;
+    display: block;
+}
+
+input {
+    width: 300px;
+    height: 20px;
+}
+
+textarea {
+    width: 300px;
 }
 
 #contacto .perfil-card {
