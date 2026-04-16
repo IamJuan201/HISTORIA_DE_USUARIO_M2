@@ -25,13 +25,6 @@ nav a:hover {
     color: rgb(244, 248, 4);
 }
 
-a {
-    color:black;
-    text-decoration: none;
-}
-a:hover {
-    color:blue;
-}
 
 section {
     padding: 20px;
@@ -42,16 +35,60 @@ section {
     gap: 16px;
 }
 
-#proyectos {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 10px;
+#proyectos .perfil-card {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px;
 }
+
+#proyectos ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+#proyectos li {
+    background-color: #cbe2f0;
+    border: 1px solid #5f6369;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+}
+
+#proyectos li:hover {
+    background-color: #1e3661;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.perfil-section .texto-perfil{
+    font-size: 13pt;
+}
+#proyectos li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: serif;
+    font-size: 12pt;
+    color: #1e3661;
+    text-decoration: none;
+}
+
+#proyectos li:hover a {
+    color: white
+}
+
 .perfil-card {
+    font-size: 15pt;
     background-color: rgb(153, 171, 200);
     border-radius: 16px;
     padding: 24px;
-    width: 700px;
+    width: 90%;
     margin: 30px;
 }
 
@@ -111,11 +148,12 @@ section {
 }
 
 .contacto-card {
+    font-size: 15pt;
     text-align: center;
     background-color: rgb(153, 171, 200);
     border-radius: 16px;
     padding: 24px;
-    width: 450px;
+    width: 70%;
     margin: 30px;
 }
 
