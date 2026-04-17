@@ -1,11 +1,3 @@
-<!-- TASK 4
-4. Galeria de mascotas con flexbox y grid:
-Retoma la galería de mascotas (creada en mascotas.html).
-Muestra al menos 6 imágenes en un layout organizado.
-Usa Flexbox para distribuir las imágenes en filas (display: flex; flex-wrap: wrap;).
-Combina con Grid (display: grid; grid-template-columns) para probar distintas formas de organizar las imágenes como mosaicos. -->
-
-
 <!DOCTYPE html>
 
 <html lang="es">
@@ -30,55 +22,63 @@ Combina con Grid (display: grid; grid-template-columns) para probar distintas fo
     </header>
     
     <section>
-        <article class="card">
-            <div class="card-header" style="background-image: url('img/gato.jpeg');"></div>
-        <div class="card-body">
-            <h3 class="card-title">Felix</h3>
-            <p class="card-description">Felix es un gato negro muy juguetón y curioso. Le encanta explorar cada rincón de la casa, perseguir cualquier cosa que se mueva y ronronear cuando está feliz. Por las noches es el rey del sofá.</p>
-        </div>
-        </article>
+        <div class="galeria-grid">
 
-    <article class="card">
-        <div class="card-header" style="background-image: url('img/perro.jpg');"></div>
-        <div class="card-body">
-            <h3 class="card-title">Max</h3>
-            <p class="card-description">Max es un golden retriever lleno de energía y amor. Es el primero en recibirte cuando llegas a casa, nunca le dice que no a un paseo y su cola no para de moverse. Un amigo fiel e incondicional.</p>
-        </div>
-    </article>
+            <article class="card">
+                <div class="card-header" style="background-image: url('img/gato.jpeg');"></div>
+                <div class="card-body">
+                    <h3 class="card-title">Felix</h3>
+                    <p class="card-description">Felix es un gato negro muy juguetón y curioso. Le encanta explorar cada rincón de la casa, perseguir cualquier cosa que se mueva y ronronear cuando está feliz. Por las noches es el rey del sofá.</p>
+                </div>
+            </article>
 
-    <article class="card">
-        <div class="card-header" style="background-image: url('img/loro.jpg');"></div>
-        <div class="card-body">
-            <h3 class="card-title">Pepe</h3>
-            <p class="card-description">Pepe es un loro amazónico de plumas brillantes y personalidad única. Le encanta dormir largas siestas, pero cuando está despierto observa todo con mucha atención. Tranquilo, curioso y muy expresivo a su manera.</p>
-        </div>
-    </article>
+            <article class="card">
+                <div class="card-header" style="background-image: url('img/perro.jpg');"></div>
+                <div class="card-body">
+                    <h3 class="card-title">Max</h3>
+                    <p class="card-description">Max es un golden retriever lleno de energía y amor. Es el primero en recibirte cuando llegas a casa, nunca le dice que no a un paseo y su cola no para de moverse. Un amigo fiel e incondicional.</p>
+                </div>
+            </article>
 
-    <article class="card">
-        <div class="card-header" style="background-image: url('img/gato.jpeg');"></div>
-        <div class="card-body">
-            <h3 class="card-title">Felix</h3>
-            <p class="card-description">Felix es un gato negro muy juguetón y curioso. Le encanta explorar cada rincón de la casa, perseguir cualquier cosa que se mueva y ronronear cuando está feliz. Por las noches es el rey del sofá.</p>
-        </div>
-    </article>
+            <article class="card">
+                <div class="card-header" style="background-image: url('img/loro.jpg');"></div>
+                <div class="card-body">
+                    <h3 class="card-title">Pepe</h3>
+                    <p class="card-description">Pepe es un loro amazónico de plumas brillantes y personalidad única. Le encanta dormir largas siestas, pero cuando está despierto observa todo con mucha atención. Tranquilo, curioso y muy expresivo a su manera.</p>
+                </div>
+            </article>
 
-    <article class="card">
-        <div class="card-header" style="background-image: url('img/gato.jpeg');"></div>
-        <div class="card-body">
-            <h3 class="card-title">Felix</h3>
-            <p class="card-description">Felix es un gato negro muy juguetón y curioso. Le encanta explorar cada rincón de la casa, perseguir cualquier cosa que se mueva y ronronear cuando está feliz. Por las noches es el rey del sofá.</p>
-        </div>
-    </article>
+            <article class="card">
+                <div class="card-header" style="background-image: url('img/conejo.jpg');"></div>
+                <div class="card-body">
+                    <h3 class="card-title">Luna</h3>
+                    <p class="card-description">Luna es una coneja de orejas largas y mirada tierna. Es muy activa al amanecer y al atardecer, le encanta saltar entre la hierba y esconderse en lugares pequeños. Siempre alerta pero muy tranquila con quienes conoce.</p>
+                </div>
+            </article>
 
-    <article class="card">
-        <div class="card-header" style="background-image: url('img/gato.jpeg');"></div>
-        <div class="card-body">
-            <h3 class="card-title">Felix</h3>
-            <p class="card-description">Felix es un gato negro muy juguetón y curioso. Le encanta explorar cada rincón de la casa, perseguir cualquier cosa que se mueva y ronronear cuando está feliz. Por las noches es el rey del sofá.</p>
+            <article class="card">
+                <div class="card-header" style="background-image: url('img/hamster.jpeg');"></div>
+                <div class="card-body">
+                    <h3 class="card-title">Rocky</h3>
+                    <p class="card-description">Rocky es un hámster dorado con mejillas siempre llenas y una mirada adorable. Pasa sus días corriendo en su rueda, guardando semillas en sus cachetes y explorando su jaula con energía infinita. Pequeño pero con una gran personalidad.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header" style="background-image: url('img/tortuga.jpg');"></div>
+                <div class="card-body">
+                    <h3 class="card-title">Tito</h3>
+                    <p class="card-description">Tito es una tortuga de tierra con un caparazón robusto y una paciencia infinita. Disfruta de tomar el sol por las mañanas, caminar despacio por el jardín y comer hojas frescas. No tiene prisa por nada y eso lo hace especial.</p>
+                </div>
+            </article>
+
         </div>
-    </article>
     </section>
 
 </body>
+
+<footer>
+    <p>© 2026 Juan Rangel. Todos los derechos reservados.</p>
+</footer>
 
 </html>

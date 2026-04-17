@@ -66,14 +66,16 @@ section {
 .perfil-section .texto-perfil{
     font-size: 13pt;
 }
+
 #proyectos li a {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
     padding: 10px;
+    justify-content: center;
     text-align: center;
-    font-family: serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12pt;
     color: #1e3661;
     text-decoration: none;
@@ -88,7 +90,7 @@ section {
     background-color: rgb(153, 171, 200);
     border-radius: 16px;
     padding: 24px;
-    width: 90%;
+    width: 70%;
     margin: 30px;
 }
 
@@ -126,7 +128,7 @@ section {
 .perfil-section h3 {
     text-align: left;
     color: black;
-    font-size: 14pt;
+    font-size: 20pt;
     margin-bottom: 6px;
 }
 
@@ -189,12 +191,28 @@ textarea {
 }
 
 /* mascotas.html configuraciones */
+.galeria-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+    width: 100%;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
 .card {
-    width: 250px;
+    width: 300px;
     border: 1px solid #eee;
     border-radius: 10px;
     padding: 10px;
-    margin: 10px;
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 5px rgb(49, 49, 49);
