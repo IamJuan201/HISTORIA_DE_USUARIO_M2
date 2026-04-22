@@ -61,7 +61,7 @@ PORTAFOLIO WEB
 2. Open the project folder:
    cd HISTORIA_DE_USUARIO_M2
 
-3. Open the file `index.html` in your browser.
+3. Open the file index.html in your browser.
 
 ## Uses
 
