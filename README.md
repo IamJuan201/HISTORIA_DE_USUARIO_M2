@@ -56,12 +56,13 @@ PORTAFOLIO WEB
 ## How to Run
 
 1. Download or clone the repository:
+   ```
    git clone https://github.com/IamJuan201/HISTORIA_DE_USUARIO_M2.git
-
-2. Open the project folder:
+   ```
+3. Open the project folder:
    cd HISTORIA_DE_USUARIO_M2
 
-3. Open the file index.html in your browser.
+4. Open the file index.html in your browser.
 
 ## Uses
 
