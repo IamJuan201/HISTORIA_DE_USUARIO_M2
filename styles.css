@@ -2,96 +2,54 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 header {
-    background-color: rgb(30, 54, 97);
+    background-color: #1e3661;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    padding: 15px;
-    text-align: center;
+    padding: 14px 24px;
+}
+
+header h1 {
+    font-size: 1.7rem;
 }
 
 nav a {
     color: white;
-    font-size: 15pt;
-    margin: 10px;
+    font-size: 1rem;
     text-decoration: none;
+    margin: 0 10px;
 }
 
 nav a:hover {
-    color: rgb(244, 248, 4);
+    color: #f4f804;
 }
-
 
 section {
-    padding: 20px;
-    text-align: left;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
+    padding: 24px 16px;
 }
 
-#proyectos .perfil-card {
-    width: 90%;
-    max-width: 1000px;
-    margin: 30px;
-}
-
-#proyectos ul {
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-}
-
-#proyectos li {
-    background-color: #cbe2f0;
-    border: 1px solid #5f6369;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 80px;
-}
-
-#proyectos li:hover {
-    background-color: #1e3661;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.perfil-section .texto-perfil{
-    font-size: 13pt;
-}
-
-#proyectos li a {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    justify-content: center;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12pt;
-    color: #1e3661;
-    text-decoration: none;
-}
-
-#proyectos li:hover a {
-    color: white
-}
-
-.perfil-card {
-    font-size: 15pt;
-    background-color: rgb(153, 171, 200);
-    border-radius: 16px;
+.perfil-card,
+.mas-sobre-mi,
+.contacto-card {
+    background-color: #99abc8;
+    border-radius: 12px;
     padding: 24px;
-    width: 55%;
-    margin: 30px;
+    width: 100%;
+    max-width: 700px;
 }
 
 .perfil-top {
@@ -102,159 +60,234 @@ section {
 }
 
 .perfil-foto {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
     object-fit: cover;
-    background-color: #ccc;
-}
-
-.perfil-info {
-    text-align: left;
 }
 
 .perfil-nombre {
-    color: black;
-    font-size: 16pt;
-    margin: 0;
+    font-size: 1.15rem;
 }
 
 .perfil-cargo {
-    color: black;
-    font-size: 11pt;
-    margin: 4px;
+    font-size: 0.85rem;
+    color: #555555;
+    margin-top: 4px;
 }
 
-.perfil-section h3 {
-    text-align: left;
-    color: black;
-    font-size: 20pt;
+.perfil-linea,
+.contacto-linea {
+    border: none;
+    border-top: 2px solid black;
+    margin-bottom: 14px;
+}
+
+.perfil-section h3,
+.mas-sobre-mi h3,
+.contacto-card h3 {
+    font-size: 1.4rem;
     margin-bottom: 6px;
 }
 
-.perfil-section p {
-    color: black;
-    font-size: 10pt;
+.texto-perfil {
+    font-size: 1rem;
+    line-height: 1.65;
     text-align: justify;
-}
-
-.perfil-linea {
-    border: 2px;
-    border-top: 2px solid black;
-    margin: 6px;
-    display: block;
-}
-
-.perfil-card h3 {
-    text-align: center;
-}
-
-.contacto-card {
-    font-size: 15pt;
-    text-align: center;
-    background-color: rgb(153, 171, 200);
-    border-radius: 16px;
-    padding: 24px;
-    width: 55%;
-    margin: 30px;
-}
-
-.contacto-linea {
-    border: 2px;
-    border-top: 2px solid black;
-    margin: 6px;
-    display: block;
-}
-
-input {
-    width: 300px;
-    height: 20px;
-}
-
-textarea {
-    width: 300px;
-}
-
-#contacto .perfil-card {
-    background-color: rgb(153, 171, 200);
-    text-align: center;
-}
-
-#contacto form {
-    display: inline-block;
-    text-align: left;
-}
-
-#contacto label {
-    display: block;
     margin-top: 10px;
 }
 
-/* mascotas.html configuraciones */
-.galeria-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    padding: 20px;
-    width: 100%;
+.parrafo-dinamico {
+    font-size: 1rem;
+    color: #1e3661;
+    margin: 10px 0 16px;
 }
 
-.galeria-grid {
+.contenido-oculto {
+    display: none;
+    background-color: white;
+    border-left: 4px solid #1e3661;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contenido-oculto.visible {
+    display: block;
+}
+
+.contenido-oculto ul {
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.contenido-oculto li {
+    margin-bottom: 6px;
+}
+
+.botones-cambiar {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.btn {
+    background-color: #1e3661;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2a4d8f;
+}
+
+#proyectos .perfil-card {
+    max-width: 900px;
+}
+
+#proyectos ul {
+    list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    padding: 20px;
-    max-width: 1200px;
+    gap: 14px;
+    margin-top: 4px;
+    padding: 0;
 }
 
-.card {
-    width: 300px;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding: 10px;
+#proyectos li {
+    background-color: #cbe2f0;
+    border: 1px solid #8aafc7;
+    border-radius: 8px;
+    min-height: 70px;
     display: flex;
-    flex-direction: column;
-    box-shadow: 5px 5px 5px rgb(49, 49, 49);
-    background-color: rgb(200, 213, 223);
+    align-items: center;
+    justify-content: center;
 }
 
-.card-header {
+#proyectos li:hover {
+    background-color: #1e3661;
+}
+
+#proyectos li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    display: block;
-    border-radius: 10px;
-}
-
-.card-body {
-    color: rgb(82, 82, 82);
-}
-
-.card-title {
+    height: 100%;
+    padding: 10px 8px;
     text-align: center;
-    font-size: 16pt;
-    margin-bottom: 0px;
+    font-size: 0.85rem;
+    color: #1e3661;
+    text-decoration: none;
 }
 
-
-.card-description {
-    text-align: justify;
-    margin-top: 5px;
-    font-size: 12pt;
+#proyectos li:hover a {
+    color: white;
 }
 
-.card:hover {
-    transform: scale(1.1);
-    transition: transform 1s ease;
+.contacto-card {
+    text-align: center;
+}
+
+#formulario-contacto {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    max-width: 340px;
+}
+
+#formulario-contacto label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 4px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#formulario-contacto textarea {
+    resize: vertical;
+}
+
+#formulario-contacto .btn {
+    margin-top: 18px;
+    width: 100%;
 }
 
 footer {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 14px;
+    font-size: 0.85rem;
+    margin-top: auto;
+}
+
+@media (max-width: 950px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    #proyectos ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        padding: 16px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .perfil-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #proyectos ul {
+        grid-template-columns: 1fr;
+    }
+
+    .botones-cambiar {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
 }

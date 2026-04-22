@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>PORTAFOLIO</title>
+    <title>Portafolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -23,73 +23,91 @@
         </nav>
     </header>
 
-<section id = "sobre-mi">
-    <div class="perfil-card">
-        <div class="perfil-top">
-            <img class="perfil-foto" src="img/perfil.png" alt="Juan Rangel">
-            <div class="perfil-info">
-                <h2 class="perfil-nombre">Juan Rangel</h2>
-                <p class="perfil-cargo">Estudiante de Desarrollo en software</p>
+    <section id = "sobre-mi">
+        <div class="perfil-card">
+            <div class="perfil-top">
+                <img class="perfil-foto" src="img/perfil.png" alt="Mi foto de perfil">
+                <div class="perfil-info">
+                    <h2 class="perfil-nombre">Juan Rangel</h2>
+                    <p class="perfil-cargo">Estudiante de Desarrollo en software</p>
+                </div>
+            </div>
+
+            <div class="perfil-section">
+                <h3 id="perfil-sobre-mi">Sobre mí</h3>
+                <hr class="perfil-linea">
+                <p class="texto-perfil">Soy un estudiante de desarrollo de software que le apasiona la tecnología y la musica. Me encanta aprender cosas nuevas cada día, resolver problemas creativamente y construir proyectos que combinen diseño y funcionalidad. Actualmente estoy fortaleciendo mis habilidades en HTML, CSS y Python con el objetivo de convertirme en un desarrollador completo. Fuera del código disfruto explorar nuevas ideas, trabajar en equipo y seguir creciendo tanto personal como profesionalmente.</p>
             </div>
         </div>
+    </section>
 
-        <div class="perfil-section">
-            <div clas="perfil-sobre-mi">
-                <h3>Sobre mi</h3>
-            </div>
+    <section id = "interactivo">
+        <div class="mas-sobre-mi">
+            <h3 id="titulo-mas-sobre-mi"> Más sobre mí</h3>
             <hr class="perfil-linea">
-            <p class="texto-perfil">Soy un estudiante de desarrollo de software que le apasiona la tecnología y la musica. Me encanta aprender cosas nuevas cada día, resolver problemas creativamente y construir proyectos que combinen diseño y funcionalidad. Actualmente estoy fortaleciendo mis habilidades en HTML, CSS y Python con el objetivo de convertirme en un desarrollador completo. Fuera del código disfruto explorar nuevas ideas, trabajar en equipo y seguir creciendo tanto personal como profesionalmente.</p>
+
+            <p id="parrafo-dinamico" class="parrafo-dinamico"> Me apasiona la tecnología y los videojuegos!</p>
+
+            <div id="contenido-oculto" class="contenido-oculto">
+                <strong>Un poco más sobre mí</strong>
+                <ul>
+                    <li>Me encanta tocar la guitarra en tiempos libres</li>
+                    <li>Me encanta tocar la guitarra en tiempos libres</li>
+                    <li>Me encanta tocar la guitarra en tiempos libres</li>
+                    <li>Me encanta tocar la guitarra en tiempos libres</li>
+                </ul>
+            </div>
+
+            <div class="botones-cambiar">
+                <button id="btn-cambiar-texto" class="btn">Cambiar frase</button>
+                <button id="btn-ver-mas" class="btn">Ver más sobre mí</button>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id = "proyectos">
-    <div class="perfil-card">
-        <h3>Proyectos</h3>
-        <hr class="perfil-linea">
-        <ul>
-            <li><a href="#Mi-pŕimer-codigo-en-python">Mi primer codigo en python</a></li>
-            <li><a href="#aerolinea">Aerolinea en python</a></li>
-            <li><a href="#Registro-de-Estudiantes">Registro de estudiantes en python</a></li>
-            <li><a href="#Estadisticas-del-Junior">Estadisticas del Junior en python</a></li>
-            <li><a href="#Contar-vocales-de-un-texto">Contar vocales de un texto en python</a></li>
-            <li><a href="#Bus-tickets">Tickets de bus en python</a></li>
-            <li><a href="#Formar-equipos-superheroes">Formar equipos de superheroes en python</a></li>
-            <li><a href="#proyecto-python-mes-1">Proyecto de python primer mes </a></li>
-            <li><a href="#Simular-cine">Simular cine en python</a></li>
-            <li><a href="#Simular-parqueadero">Simular parqueadero en python</a></li>
-            <li><a href="#Calculadora-en-python">Calculadora en python</a></li>
-            <li><a href="#PrimeraPagina">Mi primera pagina web</a></li>
-            <li><a href="#Cine">Simulacion de pagina de cine</a></li>
-            <li><a href="#Bootstrap">Pagina web con bootstrap</a></li>
-            <li><a href="#DragonBall">Pagina de dragon ball</a></li>
-        </ul>
-    </div>
-</section>
+    <section id = "proyectos">
+        <div class="perfil-card">
+            <h3 id="titulo-proyectos">Proyectos</h3>
+            <hr class="perfil-linea">
+            <ul>
+                <li><a href="#Primera-Pagina">Mi primera pagina web</a></li>
+                <li><a href="#Cine">Simulacion de pagina de cine</a></li>
+                <li><a href="#Bootstrap">Pagina web con bootstrap</a></li>
+                <li><a href="#DragonBall">Pagina de dragon ball</a></li>
+                <li><a href="#Calculadora-con-javascript">Calculadora en javascript</a></li>
+                <li><a href="#Tienda-de-libros">Tienda de libros</a></li>
+            </ul>
+        </div>
+    </section>
 
-<section id = "contacto">
-    <div class="contacto-card">
-        <h3>Contacto</h3>
-        <hr class="contacto-linea">
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" placeholder="EJ: Juan Rangel">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="EJ: juan201@example.com">
-            <label for="telefono">Telefono:</label>
-            <input type="number" id="telefono" min="1" placeholder="EJ: 1234567890">
-            <label for="comentario">Comentarios:</label>
-            <textarea type="comentario" id="comentario" rows="4" cols="20" placeholder="Deja tu comentario"></textarea>
-            <br><br>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-</section>
+    <section id = "contacto">
+        <div class="contacto-card">
+            <h3 id="titulo-contacto">Contacto</h3>
+            <hr class="contacto-linea">
+            <form id="formulario-contacto">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="EJ: Juan Rangel">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="EJ: juan201@example.com">
+
+                <label for="telefono">Telefono:</label>
+                <input type="number" id="telefono" min="1" placeholder="EJ: 1234567890">
+                
+                <label for="comentario">Comentarios:</label>
+                <textarea type="comentario" id="comentario" rows="4" cols="20" placeholder="Deja tu comentario"></textarea>
+                <br><br>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2026 Juan Rangel. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
-
-<footer>
-    <p>© 2026 Juan Rangel. Todos los derechos reservados.</p>
-</footer>
-
 </html>
