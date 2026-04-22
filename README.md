@@ -36,13 +36,13 @@ The project applies good CSS practices, media queries, and DOM manipulation with
 
 PORTAFOLIO WEB
 
-│── index.html        # Main portfolio page
+│── index.html            # Main portfolio page
 
-│── mascotas.html     # Secondary page
+│── mascotas.html         # Secondary page
 
-│── styles.css        # Styles and responsive design
+│── styles.css            # Styles and responsive design
 
-│── script.js         # JavaScript interactions
+│── script.js             # JavaScript interactions
 
 │── README.md
 
