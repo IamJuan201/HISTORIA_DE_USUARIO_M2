@@ -14,7 +14,7 @@ let current = 0;
 
 btnChange.addEventListener("click", function() {
     current = current + 1;
-    if (current >= phrases.length) {
+    if (current == phrases.length) {
         current = 0;
     }
     dynamicText.textContent = phrases[current];
